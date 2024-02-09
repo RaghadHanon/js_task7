@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .Items{
-  margin-top: 50px;
+  padding: 50px 0px;
   display: flex;
   justify-content: center;
 }
@@ -13,8 +13,13 @@
   flex-direction: column;
   gap: 20px;
 }
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
 .container{
-  width: 18%;
+  width: 20%;
 }
 .card{
   display: flex;
@@ -43,33 +48,57 @@
   color: white;
 }
 
-.card .count{
+.card .count {
   padding: 10px 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
   width: 100%;
-  
 }
 
+.card .reset{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.card .reset svg{
+  cursor: pointer;
+}
+.card .reset svg:hover{
+  transform: scale(1.1);
+}
+.card .count .counter{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #5f9ea0;
+  text-align: center;
+  padding: 5px 0;
+}
 
 
 @media screen and (max-width:1050px){
   .container{ 
-    width: 25%;
+    width: 27%;
   }
 }
 @media screen and (max-width:800px){
   .container{
-    width: 35%;
+    width: 37%;
   }
 }
 @media screen and (max-width:500px){
     .container{
-      width: 50%;
+      width: 52%;
     }
 }
 @media screen and (max-width:400px){
   .container{
-    width: 60%;
+    width: 62%;
   }
 }
