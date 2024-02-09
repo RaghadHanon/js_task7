@@ -39,6 +39,7 @@
   background-color: white;
   color: rgba(0, 0, 0, 0.473);
   cursor: pointer;
+  -webkit-user-select: none;
 }
 .card:hover{
   transform: scale(1.01);
@@ -94,11 +95,11 @@
 }
 @media screen and (max-width:500px){
     .container{
-      width: 52%;
+      width: 55%;
     }
 }
 @media screen and (max-width:400px){
   .container{
-    width: 62%;
+    width: 72%;
   }
 }
